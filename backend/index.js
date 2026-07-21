@@ -34,6 +34,10 @@ app.use(cors({
 }));
 app.use(cookieParser());
 
+app.get("/https://zerodhaclone-frontend01.vercel.app/
+", (req, res)=>{
+    res.send("Fronted";
+}
 app.use("/api/auth", authRoute);
 app.use("/order", OrderRoute);
 app.use("/api/transaction",TransactionRoute)
