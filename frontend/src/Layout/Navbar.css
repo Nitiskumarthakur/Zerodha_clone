@@ -1,0 +1,66 @@
+
+.Navbar img{
+    height: 18px;
+    width: 110px;
+}
+.Navbar .rightside a{
+    font-size: 14px;
+}
+.Navbar .rightside a:hover{
+   color: #387ED1;
+}
+.navbtn{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+/* on the click par menubar */
+.menu{
+    position: relative;
+}
+
+.mega-menu{
+    position: absolute;   /* Page ka layout change nahi karega */
+    top: 100%;
+    right: 0;
+    width: 700px;
+    background: #fff;
+    padding-top: 20px;
+    margin-top: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: .3s;
+    z-index: 9999;      /* Sabse upar dikhane ke liye */
+}
+.menu-menuBtn{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.mega-menu p{
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+}
+.mega-mamu-blow{
+    background-color: #FBFBFB;
+    padding-top: 20px;
+}
+.mega-mamu-blow p{
+    text-align: start;
+    margin-top: 10px;
+}
+.mega-mamu-blow h2{
+    font-size: 18px;
+}
+
+@media (max-width:526px) {
+    .menu{
+        display: none;
+    }
+}

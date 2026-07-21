@@ -1,0 +1,43 @@
+
+.footer{
+    margin-top: 2rem;
+}
+.footer h1{
+    font-weight: 500;
+    color: #424242;
+    font-size: 18px;
+}
+
+.listofParagraph a{
+    color: #666666;
+}
+.listofParagraph a:hover{
+    cursor: pointer;
+    color: #387ED1;
+}
+/* .footer img{
+    height: 25px;
+    width: 110px;
+} */
+.footer .lastParagraph{
+    font-size: x-small;
+}
+.aboutFooter{
+     margin: -1rem 2rem -2rem 2rem;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutFooter a{
+    color: #666666;
+}
+.aboutFooter a:hover{
+    cursor: pointer;
+    color: #387ED1;
+}
+
+@media (max-width:526px) {
+    .aboutFooter{
+        display: none;
+    }
+}

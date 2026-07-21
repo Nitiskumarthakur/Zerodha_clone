@@ -1,0 +1,46 @@
+.singForm input {
+
+    display: block;
+    margin: 0 auto;
+    /* width: 150px;
+    height: 500px !important; */
+    font-size: 18px;
+}
+
+.signBtn {
+    width: 204px;
+    height: 44px;
+    color: #fefefe;
+    background-color: #387ED1;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+}
+
+.signBtn:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+
+.iconOpenEye {
+    position: absolute;
+    right: 19rem;
+    margin-top: -35px;
+}
+.iconOpenEye:hover{
+    cursor: pointer;
+}
+@media (max-width:500px) {
+    .iconOpenEye {
+        position: absolute;
+        margin-right: -70px;
+    }
+}
+@media (max-width:770px) {
+    .iconOpenEye {
+        position: absolute;
+        right: 110px;
+    }
+}

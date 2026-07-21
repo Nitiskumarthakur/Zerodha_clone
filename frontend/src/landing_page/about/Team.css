@@ -1,0 +1,31 @@
+
+.Team button{
+    border: none;
+    background-color: transparent;
+}
+.venuBioNone{
+    display: none;
+}
+.venuBio{
+    display: block;
+}
+.drBioNone{
+    display: none;
+}
+.drBio{
+    display: block;
+}
+
+.nikhilBioNone{
+    display: none;
+}
+.nikhilBio{
+    display: block;
+}
+.Team img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}

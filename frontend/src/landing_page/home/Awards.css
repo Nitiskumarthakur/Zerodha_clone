@@ -1,0 +1,77 @@
+h3{
+    font-size: 24px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #424242;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+p{
+    color: #666666;
+    margin-bottom: 2.5rem;
+}
+.AwardImage{
+    width: 600px;
+    padding-bottom: 1rem;
+} 
+.blow-p{
+   display: flex;
+   justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+}
+
+/* boder Section */
+.likeBorder{
+   background-color:#f6fbfe;
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   padding: 0 130px;
+   height: 70px;
+}
+.likeBorder p{
+    padding:0 30px;
+    margin-top: 2rem;
+}
+.likeBorder img{
+   width: 202px;
+   height: 82px;
+}
+/* .last-img{
+    width: 176px;
+    height: 25px;
+} */
+@media (max-width: 526px){
+     /* .col-12 h3 {
+        font-size: 28px !important;
+        text-align: center;
+     } */
+    .forphone{
+        margin-left: 0.5rem;
+    }
+    .phone-A-Img img{
+        width:350px;
+        margin-left: 0.5rem;
+    }
+    .likeBorder{
+        display: flex;
+        flex-direction: column;
+        height: 170px;
+    }
+    .likeBorder p{
+        margin-top: -1.2rem;
+        padding: 0px;
+        width: 380px;
+    }
+    .likeBorder img{
+        margin-right: 3rem;
+    }
+    .phone-A-border-img{
+        display: none;
+    }
+}

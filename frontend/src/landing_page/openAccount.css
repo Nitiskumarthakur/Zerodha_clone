@@ -1,0 +1,21 @@
+.openA{
+    margin-top: 6rem;
+}
+.openA h1{
+    font-weight: 500;
+    font-size: 32px;
+    color: #424242;
+}
+.openABtn{
+    width: 204px;
+    height: 44px;
+    color: #fefefe;
+    background-color: #387ED1;  
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+}
+.openABtn:hover{
+    cursor: pointer;
+    background-color: black;
+}

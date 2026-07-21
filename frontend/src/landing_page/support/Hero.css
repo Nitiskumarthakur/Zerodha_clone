@@ -1,0 +1,79 @@
+.ticketBtn{
+    text-align: center;
+    font-size: 20px;
+    background-color: #387ED1;
+    color: white;
+    padding: 5px 0px 0px 0px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+}
+.ticketBtn:hover{
+    background-color: black;
+}
+.support_inp input{
+    width: 100%;
+    height:60px;
+    padding: auto;
+    text-indent: 50px;
+    border:none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.support_inp input:focus {
+  border: none; /* ya border: 1px solid transparent; */
+  outline: none; 
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+    background-color: none !important;
+}
+ 
+.accordion-item:hover {
+    transform: translateY(-5px);
+    transition: 0.1s;
+}
+.accordion ul{
+    margin-left: 25px;
+}
+.accordion ul li{
+    color: #387ED1;
+    padding: 5px;
+}
+.accordion ul li:hover{
+    color: black;
+    transition: 0.1s;
+}
+/* //Right side */
+.supportOL{
+    background-color: #fff4e5;
+    padding: 20px;
+    margin:3rem 0rem 0rem 2rem;
+    border-left: 12px solid #ff9100;
+}
+.supportOL li:hover{
+    color: black;
+}
+.supportPLast{
+    padding: 20px;
+    margin-left: 1rem;
+}
+.supportPLast h3{
+    
+    background-color: aliceblue;
+    padding-left:10px ;
+}
+.supportPLast p{
+    padding: 10px;
+    font-size: 15px;
+    margin-top: -41px;
+    color: #387ED1;
+}
+.supportPLast p:hover{
+    color: black;
+    transition: 0.1s;
+}

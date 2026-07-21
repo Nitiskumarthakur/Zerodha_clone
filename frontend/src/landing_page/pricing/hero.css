@@ -1,0 +1,49 @@
+.tabs{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    margin-left: 30px;
+    color: #387ED1;
+}
+.hr{
+    /* color: red; */
+    margin-top: -2px;
+    margin-left:  30px;
+}
+.ActiveBtn{
+   
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    margin-left: 30px;
+    color: #6666;
+    position: relative;
+    padding: 20px;
+    border-bottom: 2px solid #387ED1;
+}
+
+.equity{
+    display: inline;
+}
+.equityHide{
+    display: none;
+}
+.Currency{
+    display: inline;
+}
+.CurrencyHide{
+    display: none;
+}
+.commodity{
+    display: inline;
+}
+.commodityHide{
+    display: none;
+}
+/* table{
+    width:100%;
+    border-collapse: collapse;
+    color: #387ED1;
+} */
+
+ 
