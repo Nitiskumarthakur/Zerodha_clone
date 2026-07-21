@@ -25,8 +25,8 @@ main().then(()=>console.log("DB connected"))
 app.set("trust proxy", 1);
 app.use(cors({
     origin:[
-        "https://zerodhfronted2.vercel.app",
-        "https://zerodhadashboard2.vercel.app"
+        "https://zerodhfronted3.vercel.app",
+        "https://zerodhdashboard3.vercel.app"
     ],
     credentials: true,
 }));
