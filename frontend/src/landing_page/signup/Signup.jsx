@@ -33,7 +33,7 @@ function Singup() {
 
             setTimeout(()=> {
                 //navigate("/about");
-                window.location.href = "https://zerodhaclone-dashboard05-ijne5o6ca-nitish-kumar05.vercel.app/";
+                window.location.href = "https://zerodhdashboard3.vercel.app/";
             },1000);
 
         } else {
