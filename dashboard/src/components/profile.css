@@ -1,0 +1,22 @@
+.profile ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 17rem;
+    gap: 1rem;
+    background-color:rgb(250, 118, 78);
+    border: 2px solid red;
+    padding:10px 35px;
+    position: absolute;
+    /* margin-left: 28rem; */
+    margin-left: 17rem;
+}
+.profile ul li {
+    color: rgb(60, 58, 58);
+   
+}
+li:hover{
+    color:black;
+    font-weight:600;
+    transition: 0.1s;
+    
+}
