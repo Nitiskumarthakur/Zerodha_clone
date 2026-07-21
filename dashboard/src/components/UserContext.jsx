@@ -13,7 +13,7 @@ export const UserProvider = ({ children }) => {
     const getUser = async () => {
         try {
             const res = await axios.post(
-                "http://localhost:3002/api/auth/valification", {}, { withCredentials: true }
+                "https://zerodha-clone-backend-c43d.onrender.com/api/auth/valification", {}, { withCredentials: true }
             );
             // console.log("res",res)
             if (res.data.status === true) {
@@ -30,7 +30,7 @@ export const UserProvider = ({ children }) => {
     
     //get all the Order
     const getOrder = ()=>{
-        axios.get('http://localhost:3002/order/allorder', { withCredentials: true }).then((res) => {
+        axios.get('https://zerodha-clone-backend-c43d.onrender.com/order/allorder', { withCredentials: true }).then((res) => {
             setAllOrder(res.data);
         })
     };

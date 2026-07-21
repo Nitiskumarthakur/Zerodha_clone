@@ -43,7 +43,7 @@ const Funds = () => {
   //for credit_Money in the User Data base.
   async function credit_amount(amount) {
     if (amount > 0) {
-      const res = await axios.post("http://localhost:3002/api/fund/credit", { amount }, { withCredentials: true })
+      const res = await axios.post("https://zerodha-clone-backend-c43d.onrender.com/api/fund/credit", { amount }, { withCredentials: true })
 
       toast.success(res.data.message, { position: "top-center" })
 
@@ -64,7 +64,7 @@ const Funds = () => {
   //for debit_Money in the User Data base.
   async function debit_amount(amount) {
     if (amount > 0) {
-      const res = await axios.post("http://localhost:3002/api/fund/debit", { amount }, { withCredentials: true })
+      const res = await axios.post("https://zerodha-clone-backend-c43d.onrender.com/api/fund/debit", { amount }, { withCredentials: true })
 
       toast.success(res.data.message, { position: "top-center" })
       //for update the current user.
@@ -164,7 +164,7 @@ const Tranaction_page = () => {
 
   useEffect(() => {
     const fn = async () => {
-      const res = await axios.post("http://localhost:3002/api/transaction/", {}, { withCredentials: true })
+      const res = await axios.post("https://zerodha-clone-backend-c43d.onrender.com/api/transaction/", {}, { withCredentials: true })
       setAllTransaction(res.data.transaction);
     }
     fn()

@@ -14,7 +14,7 @@ const Home = () => {
     return <p className="text-center mt-5">Loadding......</p>
   }
   if (isUser === false) {
-    window.location.href = "http://localhost:5174/"; // for signup/login
+    window.location.href = "https://zerodhaclone-frontend01.vercel.app/"; // for signup/login
     return null
   }
   return (
