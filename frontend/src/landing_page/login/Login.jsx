@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 //for the style password.
 import "../signup/signup.css";
 
@@ -100,7 +100,7 @@ function Login() {
             </div>
             <div className="text-center mt-5">
                 <h2>You have not a demat account?</h2>
-                <h5>Move your holdings to Zerodha and we'll cover your transfer costs, up to ₹500, <a href="/signup">signIn →</a></h5>
+                <h5>Move your holdings to Zerodha and we'll cover your transfer costs, up to ₹500, <Link to="/signup">signIn →</Link></h5>
             </div>
             <ToastContainer />
         </div>
