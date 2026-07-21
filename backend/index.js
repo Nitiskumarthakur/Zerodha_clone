@@ -22,6 +22,7 @@ async function main(){
 main().then(()=>console.log("DB connected"))
 .catch(()=>console.log("Something Error in mongoDB connection"));
 
+app.set("trust proxy", 1);
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cors({
