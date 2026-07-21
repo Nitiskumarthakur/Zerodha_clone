@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Singup() {
     
+    //autometic redirect
     const navigate = useNavigate();
 
     const [user, setUser] = useState({ email: "", username: "", password: "" });
@@ -23,7 +24,7 @@ function Singup() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:3002/api/auth/signup', {
+            const res = await axios.post('https://zerodha-clone-backend-c43d.onrender.com/api/auth/signup', {
                 user,              
             },{withCredentials: true,})
            //console.log(res);
@@ -31,8 +32,8 @@ function Singup() {
             toast.success(res.data.message, { position: "top-center" });
 
             setTimeout(()=> {
-                navigate("/about");
-                window.location.href = "http://localhost:5173/";
+                //navigate("/about");
+                window.location.href = "https://zerodhaclone-dashboard05-ijne5o6ca-nitish-kumar05.vercel.app/";
             },1000);
 
         } else {
@@ -113,7 +114,7 @@ return (
         </div>
         <div className="text-center mt-5">
             <h2>Already have a demat account?</h2>
-            <h5>Move your holdings to Zerodha and we'll cover your transfer costs, up to ₹500, <a href="/login">LogIN →</a></h5>
+            <h5>Move your holdings to Zerodha and we'll cover your transfer costs, up to ₹500, <Link to="/login">LogIN →</Link></h5>
         </div>
         <ToastContainer />
     </div>

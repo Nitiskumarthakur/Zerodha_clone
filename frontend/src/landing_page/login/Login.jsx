@@ -27,14 +27,14 @@ function Login() {
         e.preventDefault();
         try {
             const res = await axios.post(
-                "http://localhost:3002/api/auth/login", { user }, { withCredentials: true }
+                "https://zerodha-clone-backend-c43d.onrender.com/api/auth/login", { user }, { withCredentials: true }
 
             );
             //console.log(res);
             if (res.data.success === true) {
                 toast.success(res.data.message || "Login successful!",{ position: "top-center" });
                 setTimeout(() => {
-                    window.location.href = "http://localhost:5173/";
+                    window.location.href = "https://zerodhaclone-dashboard05-ijne5o6ca-nitish-kumar05.vercel.app/";
                 }, 1000);
             } else {
                 toast.error(res.data.message || "Login failed",{ position: "top-center" } );
