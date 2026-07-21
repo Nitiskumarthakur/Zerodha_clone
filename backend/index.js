@@ -23,8 +23,6 @@ main().then(()=>console.log("DB connected"))
 .catch(()=>console.log("Something Error in mongoDB connection"));
 
 app.set("trust proxy", 1);
-app.use(express.json());
-app.use(express.urlencoded({extended:true}));
 app.use(cors({
     origin:[
         "https://zerodhaclone-frontend01.vercel.app/",
@@ -32,6 +30,9 @@ app.use(cors({
     ],
     credentials: true,
 }));
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
 app.use(cookieParser());
 
 app.use("/api/auth", authRoute);
